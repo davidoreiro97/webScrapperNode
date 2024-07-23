@@ -7,6 +7,7 @@ import { indexScrapperArcoiris } from "./services/webScrappers/arcoiris/indexScr
 import { indexScrapperJumbo } from "./services/webScrappers/jumbo/indexScrapper.js";
 import { indexScrapperCarrefour } from "./services/webScrappers/carrefour/indexScrapper.js";
 import { CheerioReinaGET } from "./services/webScrappers/cheerioReina/cheerioReina.js";
+import { CheerioGallegaGET } from "./services/webScrappers/cheerioGallega/cheerioGallega.js";
 export const callScrappers = async (input, navegador) => {
 	// console.log("------------------- CROTO -------------------");
 	// await indexScrapperCoto("COTO", input, navegador)
@@ -40,8 +41,10 @@ export const callScrappers = async (input, navegador) => {
 	// await indexScrapperCarrefour("CARREFOUR", input, navegador)
 	// 	.then(() => console.log("Consulta finalizada con exito."))
 	// 	.catch((error) => console.error("Error:", error));
-
-	await CheerioReinaGET(input)
+	// await CheerioReinaGET(input)
+	// 	.then(() => console.log("Consulta finalizada con exito."))
+	// 	.catch((error) => console.error("Error:", error));
+	await CheerioGallegaGET(input)
 		.then(() => console.log("Consulta finalizada con exito."))
 		.catch((error) => console.error("Error:", error));
 };
