@@ -2,8 +2,8 @@
 import readline from "readline";
 import puppeteer from "puppeteer";
 import { callScrappers } from "./callScrappers.js";
-const navegador = await puppeteer.launch({ headless: false, slowMo: 250 });
-
+//const navegador = await puppeteer.launch({ headless: false, slowMo: 250 });
+const navegador = "";
 const rl = readline.createInterface({
 	// Interfaz para readline
 	input: process.stdin,
