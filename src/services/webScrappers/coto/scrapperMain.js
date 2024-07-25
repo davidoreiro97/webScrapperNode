@@ -15,7 +15,7 @@ export async function cotoScrapper(nombreProducto, instanciaNavegador) {
 			request.resourceType() === "media" ||
 			request.resourceType() === "script" ||
 			request.resourceType() === "fetch" ||
-			request.resourceType() === "xhm" ||
+			request.resourceType() === "xhr" ||
 			request.resourceType() === "texttrack" ||
 			request.resourceType() === "eventsource" ||
 			request.resourceType() === "websocket" ||
